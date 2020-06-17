@@ -1,0 +1,57 @@
+#homeText {
+    text-align: center;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    padding: auto;
+    padding-top: 0px;
+    box-sizing: content-box;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+.carousel {
+  width: 640px;
+  height: 560px;
+}
+
+#homeCarousel {
+  position: relative;
+  top: -95px;
+  height: 250px !important;
+}
+
+
+@media screen and (min-width: 1130px) and (max-width: 400px) {
+  .sideNav { display: none; }
+}
+
+@media screen and (min-width: 401px) and (max-width: 1130px) {
+  #menuList { display: none; } 
+}
+
+
+
