@@ -1,10 +1,14 @@
- .par{
-    height: 170px;
+.par{
+    height: fit-content;
+    padding: .0015%;
     /* background-color: rgb(255, 212, 133) !important; */
     outline: 2px solid black;
 }
 .paragraph {
-    margin-left: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .list-overflow-container{
@@ -15,4 +19,4 @@
     position: relative;
     z-index: 1;
     top: -75px;
- }
+}
