@@ -29,25 +29,14 @@ export function Brick({data}){
        
         <div className="par" id="background" style={{width: "100%", backgroundColor: "wheat", margin: "10px",family:"Arial,Helvetica,serif",boxShadow:"10px 10px 10px lightGray"}}>
             <div className="paragraph">
-            <h4>Title: {data.title}</h4>
-            <p>Description: {data.description}</p>
-            <p>Phone Number: {data.phone}</p>
-            <p>Email: {data.email}</p>
-            <img className="img" style={{width:"20%", float: "right", marginLeft: "20px", height: "150px"}} src={data.image} alt={`${data.user}'s image of their problem`} />
+            <h4>{data.person}</h4>
+            <p>{data.quote}</p>
+            {/* <img className="img" style={{width:"20%", float: "right", marginLeft: "20px", height: "150px"}} src={data.image} alt={`${data.user}'s image of their problem`} /> */}
             </div>
             
         </div>
     );
 }
-
-// function hasPhoto () {
-//     if(data.image){
-//         return data.image
-//     } else {
-//         return ("../../images/notfound.png")
-//     }
-// }
-
 
 export function Row({ fluid, children }) {
     return <div className={`row${fluid ? "-fluid" : ""}`}>{children}</div>;

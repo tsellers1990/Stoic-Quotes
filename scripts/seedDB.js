@@ -6,7 +6,7 @@ mongoose.connect(
     "mongodb://localhost/StoicQuotes"
 );
 
-const jobSeed = [
+const quoteSeed = [
   {
     quote: "If you are distressed by anything external, the pain is not due to the thing itself, but to your estimate of it; and this you have the power to revoke at any moment.",
     person: "Marcus Aurelius"       
@@ -25,9 +25,9 @@ const jobSeed = [
   },
 ];
 
-db.Job
+db.quote
     .remove({})
-    .then(() => db.Job.collection.insertMany(jobSeed))
+    .then(() => db.quote.collection.insertMany(quoteSeed))
     .then(data => {
       console.log(data.result.n + " records inserted!");
       process.exit(0);

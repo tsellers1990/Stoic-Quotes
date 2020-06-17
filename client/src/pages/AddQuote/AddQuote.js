@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Input, FormBtn, UploadBtn } from '../../components/Form/index'
 import API from "../../utils/API"
 import "./AddQuote.css";
-// find a way of getting the user ID for the API.saveJob functionality //if we have time, get it from the profile page
+// find a way of getting the user ID for the API.savequote functionality //if we have time, get it from the profile page
 
 
 const AddQuotes = () => {
@@ -21,7 +21,7 @@ const AddQuotes = () => {
   function handleFormSubmit(event) {
     event.preventDefault();
     if (formObject.title && formObject.description) {
-      API.saveJob({
+      API.savequote({
         title: formObject.title,
         user: formObject.user,
         description: formObject.description,
@@ -40,7 +40,7 @@ const AddQuotes = () => {
   // }
 
   return (
-    <div className="new-job-form">
+    <div className="new-quote-form">
       <form>
         {/* maybe add something to the navbar to hold the username */}
         <Input 

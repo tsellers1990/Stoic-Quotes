@@ -8,16 +8,16 @@ export default {
     search: function(query) {
         return axios.get(BASEURL + query + APIKEY);
       },
-    getJobs: function() {
-        return axios.get("/api/jobs");
+    getQuotes: function() {
+        return axios.get("/api/quotes");
     },
-    getJob: function(id) {
-        return axios.get("/api/jobs" + id);
+    getQuote: function(id) {
+        return axios.get("/api/quotes" + id);
     },
-    deleteJob: function(id) {
-        return axios.delete("/api/jobs" + id);     
+    deleteQuotes: function(id) {
+        return axios.delete("/api/quotes" + id);     
     },
-    saveJob: function(jobData) {
-        return axios.post("/api/jobs" , jobData);
+    saveQuotes: function(quoteData) {
+        return axios.post("/api/quotes" , quoteData);
     }
 };

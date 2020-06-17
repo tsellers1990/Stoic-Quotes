@@ -3,32 +3,32 @@ import { Container, List, ListItem, Col, Row, Brick } from '../../components/Quo
 import API from '../../utils/API';
 import "./ViewQuotes.css"
 
-const ViewJobs = () => {
+const ViewQuotes = () => {
 	
-	const[jobs, setJobs] = useState([])
+	const[quotes, setQuotes] = useState([])
 
 	useEffect(() => {
-		loadJobs()
+		loadQuotes()
 	}, [])// if you put something inside of this empty array, then you can make useEffect fire ONLY when that condition is met
 
-	function loadJobs() {
-		API.getJobs()
+	function loadQuotes() {
+		API.getQuotes()
 			.then(res => 
-				setJobs(res.data)
+				setQuotes(res.data)
 			)
 			.catch(err => console.log(err));
 	}
 
 	return (
 		<Container fluid>
-			<Row id="jobView">
+			<Row id="quoteView">
 				<Col size="md-6 sm-12">
-					{jobs.length ? (
+					{quotes.length ? (
 						<List>
-							{jobs.map(job => {
+							{quotes.map(quote => {
 								return(
-								<ListItem key={job._id}>
-									<Brick data={job} />
+								<ListItem key={quote._id}>
+									<Brick data={quote} />
 								</ListItem>
 								)
 							})}
@@ -43,4 +43,4 @@ const ViewJobs = () => {
 }
 
 
-export default ViewJobs;
+export default ViewQuotes;
