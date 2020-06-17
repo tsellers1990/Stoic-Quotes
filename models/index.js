@@ -1,5 +1,5 @@
 module.exports = {
-    Job: require("./job"),
+    Job: require("./quote"),
     // profile: require("/profile") //when you're ready to set up the profiles
 };
   

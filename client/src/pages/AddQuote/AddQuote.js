@@ -5,7 +5,7 @@ import "./AddQuote.css";
 // find a way of getting the user ID for the API.saveJob functionality //if we have time, get it from the profile page
 
 
-const AddJobs = () => {
+const AddQuotes = () => {
 
   const [formObject, setFormObject] = useState({})
 
@@ -83,4 +83,4 @@ const AddJobs = () => {
     
 }
 
-export default AddJobs;
+export default AddQuotes;

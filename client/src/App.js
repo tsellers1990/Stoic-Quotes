@@ -23,8 +23,8 @@ function App() {
           <Navbar name={"Picture It Done"}/>
         </header>
         <Switch>  
-          <Route exact path="/" component={Home}/>
-          <Route exact path="/Home" component={Home}/>
+          <Route exact path="/" component={ViewQuotes}/>
+          <Route exact path="/Home" component={ViewQuotes}/>
           <Route exact path="/Quotes" component={ViewQuotes}/>
           <Route exact path="/NewQuote" component={AddQuote}/>
           <Route path="" component={noMatch}/>
