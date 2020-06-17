@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Container, List, ListItem, Col, Row, Brick } from '../../components/JobPost';
+import { Container, List, ListItem, Col, Row, Brick } from '../../components/QuotePost';
 import API from '../../utils/API';
-import "./ViewJobs.css"
+import "./ViewQuotes.css"
 
 const ViewJobs = () => {
 	

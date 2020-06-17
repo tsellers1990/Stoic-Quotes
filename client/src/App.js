@@ -4,8 +4,8 @@ import Navbar from "./components/Nav/index";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from "./pages/Home/Home";
 import history from "./utils/history";
-import ViewJobs from "./pages/ViewJobs/ViewJobs";
-import AddJobs from './pages/AddJob/AddJob';
+import ViewQuotes from "./pages/ViewQuotes/ViewQuotes";
+import AddQuote from './pages/AddQuote/AddQuote';
 import { useAuth0 } from "./react-auth0-spa";
 import 'materialize-css/dist/css/materialize.min.css';
 import noMatch from "./pages/NoMatch";
@@ -25,8 +25,8 @@ function App() {
         <Switch>  
           <Route exact path="/" component={Home}/>
           <Route exact path="/Home" component={Home}/>
-          <Route exact path="/Quotes" component={ViewJobs}/>
-          <Route exact path="/NewQuote" component={AddJobs}/>
+          <Route exact path="/Quotes" component={ViewQuotes}/>
+          <Route exact path="/NewQuote" component={AddQuote}/>
           <Route path="" component={noMatch}/>
         </Switch>
       </Router>
