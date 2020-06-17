@@ -7,33 +7,22 @@ mongoose.connect(
 );
 
 const jobSeed = [
-    {
-      title: "I need someone to lay my pipe(s)",
-      user: "Joe Mama",
-      description: "Just trying to lay some pipe(s)",
-      date: new Date(Date.now()),
-      image: "../images/notfound.png",
-      phone: "(012)345-6789",
-      email: "NotReal@DontTryIt.com"
-    },
-    {
-      title: "I need someone to straight pipe my VQ",
-      user: "Guy with a 350z",
-      description: "If it's louder, it's faster.",
-      date: new Date(Date.now()),
-      image: "../images/notfound.png",
-      phone: "(987)654-3210",
-      email: "ThisIsASeed@DontTryIt.com"
-    },
-    {
-      title: "I need someone to build a website for connecting homeowners to contractors",
-      user: "helloWorld007",
-      description: "I cant pay you, but will trade you a broken RC car and four teddy bears. I can also throw in a towel to sweeten the deal!",
-      date: new Date(Date.now()),
-      image: "../images/notfound.png",
-      phone: "(456)987-1234",
-      email: "BadJoke@DontTryIt.com"
-    }
+  {
+    quote: "If you are distressed by anything external, the pain is not due to the thing itself, but to your estimate of it; and this you have the power to revoke at any moment.",
+    person: "Marcus Aurelius"       
+  },
+  {
+    quote: "The time will come when diligent research over long periods will bring to light things which now lie hidden. A single lifetime, even though entirely devoted to the sky, would not be enough for the investigation of so vast a subject... And so this knowledge will be unfolded only through long successive ages",
+    person: "Seneca"       
+  },
+  {
+    quote: "We suffer more in imagination than in reality",
+    person: "Seneca"       
+  },
+  {
+    quote: "Think of the life you have lived until now as over and, as a dead man, see what’s left as a bonus and live it according to Nature. Love the hand that fate deals you and play it as your own, for what could be more fitting?",
+    person: "Marcus Aurelius"       
+  },
 ];
 
 db.Job
