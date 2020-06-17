@@ -1,10 +1,10 @@
 .nav-wrapper {
-    background-color: rgb(4, 163, 168);
+    background-color: rgb(163 ,162 , 162);
     /* text-align: left; */
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 32px;
-    box-shadow:0px 10px 10px rgb(163, 162, 162);
+    background-color: rgb(163 ,162 , 162);
     
 }
 
@@ -30,7 +30,7 @@ nav.brand-logo {
 width:300px !important;}
 
 #slide-out {
-    background-color: rgba(0, 180, 156, 0.8) !important;
+    background-color: rgb(163 ,162 , 162);
     height: fit-content;
     width: 175px;
     box-shadow: 2px 2px 4px black;
@@ -39,13 +39,13 @@ width:300px !important;}
 
  #linkTags {
      font-size: 25px;
-     background-color: rgb(4, 163, 168);
- }
+     background-color: rgb(163 ,162 , 162);
+}
 
  #linkTags:hover {
      font-size: 26Px;
      color: rgb(190, 255, 255);
- }
+}
 
  #sideLinks {
      color: white;
@@ -53,10 +53,9 @@ width:300px !important;}
      text-align: center;
      margin-top: 20px;
 
- }
+}
 
  #sideLinks:hover {
     color: rgb(0, 251, 218);
     font-size: 17px;
-
- }
+}
