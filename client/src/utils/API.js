@@ -17,7 +17,7 @@ export default {
     deleteQuotes: function(id) {
         return axios.delete("/api/quotes" + id);     
     },
-    saveQuotes: function(quoteData) {
+    saveQuote: function(quoteData) {
         return axios.post("/api/quotes" , quoteData);
     }
 };

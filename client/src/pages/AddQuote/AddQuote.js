@@ -20,15 +20,11 @@ const AddQuotes = () => {
 
   function handleFormSubmit(event) {
     event.preventDefault();
-    if (formObject.title && formObject.description) {
-      API.savequote({
-        title: formObject.title,
-        user: formObject.user,
-        description: formObject.description,
-        date: Date.now,
-        image: formObject.image,
-        phone: formObject.phone,
-        email: formObject.email
+    if (formObject.quote) {
+      // console.log("cheese")
+      API.saveQuote({
+        person: formObject.person,
+        quote: formObject.quote
       })
       // .then(awsPost)
       .catch(err => console.log(err));
