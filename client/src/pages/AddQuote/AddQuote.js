@@ -45,37 +45,25 @@ const AddQuotes = () => {
         {/* maybe add something to the navbar to hold the username */}
         <Input 
           onChange={handleInputChange}
-          name="title"
-          placeholder="Your Post Title (required)"
+          name="person"
+          placeholder="Who Said it? (if unknown, leave blank)"
           style={{ marginTop: 10}}
         />
         <Input 
           onChange={handleInputChange}
-          name="description"
-          placeholder="Please Describe Your Problem"
+          name="quote"
+          placeholder="What did they say?"
           style={{ marginTop: 10}}
         />
-        <Input
-          onChange={handleInputChange}
-          name="phone"
-          placeholder="Phone Number (optional)"
-          style={{ marginTop: 10}}
-        />
-        <Input 
-          onChange={handleInputChange}
-          name="email"
-          placeholder="Email (optional)"
-          style={{ marginTop: 10}}
-        />
-          <form id="uploadForm" enctype="multipart/form-data">
-              <label for="description"></label>
-              <label for="upload">Choose a file for photo upload! </label>
-              <input type="file" name="upload" id="upload" />
-          </form>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label for="description"></label>
+            <label for="upload">Choose a file for photo upload! </label>
+            <input type="file" name="upload" id="upload" />
+        </form>
+
         <FormBtn //this is the submit button
           disable={!(formObject.title || formObject.description)}
-          onClick={handleFormSubmit}
-        >
+          onClick={handleFormSubmit}>
         </FormBtn>
       </form>
     </div>
